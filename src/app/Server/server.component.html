@@ -15,3 +15,6 @@ Server status is {{getServerStatus()}}<br>
 
 <input type="text" class="form-control" (input)="onUpdateServer($event)">
 {{eventMessage}}
+
+
+<p *ngIf="isServerAdded">DONE</p>
