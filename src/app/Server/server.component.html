@@ -4,3 +4,9 @@ Server status is {{getServerStatus()}}
 
 
 <button class="btn btn-primary" [disabled] = "!allowNewServer">Add Server</button>
+
+<!--use string interpolation when to print-->
+{{allowNewServer}}
+
+<!--use property binding when this kind of functionality needed -->
+<p [innerText] = "allowNewServer"></p>
