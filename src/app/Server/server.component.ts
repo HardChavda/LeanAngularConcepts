@@ -19,4 +19,9 @@ export class ServerComponent{
     return this.serverStatus;
   }
 
+  serverCreationStatus = "No Server is Added";
+
+  onServerCreation(){
+    this.serverCreationStatus = "Server Added!";
+  }
 }

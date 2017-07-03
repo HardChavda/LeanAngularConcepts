@@ -1,12 +1,13 @@
-Server {{serverId}} is {{serverStatus}}
+<br>Server {{serverId}} is {{serverStatus}}<br>
 
-Server status is {{getServerStatus()}}
+Server status is {{getServerStatus()}}<br>
 
-
-<button class="btn btn-primary" [disabled] = "!allowNewServer">Add Server</button>
+<br>
+<button class="btn btn-primary" [disabled] = "!allowNewServer" (click)="onServerCreation()">Add Server</button><br>
+{{serverCreationStatus}}<br>
 
 <!--use string interpolation when to print-->
-{{allowNewServer}}
+{{allowNewServer}}<br>
 
 <!--use property binding when this kind of functionality needed -->
-<p [innerText] = "allowNewServer"></p>
+<p [innerText] = "allowNewServer"></p><br>
