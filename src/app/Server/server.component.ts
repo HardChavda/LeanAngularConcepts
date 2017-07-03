@@ -26,7 +26,7 @@ export class ServerComponent{
   }
 
   eventMessage = '';
-  onUpdateServer(event : any){
-    this.eventMessage = event.target.value;
+  onUpdateServer(event : Event){
+    this.eventMessage = (<HTMLInputElement>event.target).value;
   }
 }
