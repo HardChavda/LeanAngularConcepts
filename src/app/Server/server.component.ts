@@ -24,4 +24,9 @@ export class ServerComponent{
   onServerCreation(){
     this.serverCreationStatus = "Server Added!";
   }
+
+  eventMessage = '';
+  onUpdateServer(event : any){
+    this.eventMessage = event.target.value;
+  }
 }

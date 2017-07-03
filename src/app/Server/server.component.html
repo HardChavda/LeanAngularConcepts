@@ -11,3 +11,7 @@ Server status is {{getServerStatus()}}<br>
 
 <!--use property binding when this kind of functionality needed -->
 <p [innerText] = "allowNewServer"></p><br>
+
+
+<input type="text" class="form-control" (input)="onUpdateServer($event)">
+{{eventMessage}}
