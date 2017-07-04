@@ -1,4 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<md-toolbar color="primary">
+  <span>Toolbar</span>
+
+
+    <md-menu #appMenu="mdMenu" xPosition="before">
+      <button md-menu-item> Settings </button>
+      <button md-menu-item> Help </button>
+    </md-menu>
+
+    <button md-icon-button [mdMenuTriggerFor]="appMenu">
+      <md-icon> menu </md-icon>
+    </button>
+
+
+</md-toolbar>
 <div style="text-align:center">
   <h1>
     Welcome to {{title}}!!
@@ -9,10 +24,9 @@
   <div class="row">
     <div class="col-xs-12">
       <input type="text" [(ngModel)]="name">
-      {{name}}
-      <app-server></app-server>
+      {{name}}<br><br>
     </div>
   </div>
 </div>
 
-
+<router-outlet></router-outlet>
