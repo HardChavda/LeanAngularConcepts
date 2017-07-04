@@ -14,7 +14,7 @@ export class ServerComponent{
 
   serverId: number = 10;
   serverStatus: string = "Online";
-
+  isServerAdded = false;
   getServerStatus(){
     return this.serverStatus;
   }
@@ -23,6 +23,7 @@ export class ServerComponent{
 
   onServerCreation(){
     this.serverCreationStatus = "Server Added!";
+    this.isServerAdded = true;
   }
 
   eventMessage = '';
