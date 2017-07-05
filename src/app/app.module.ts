@@ -7,6 +7,8 @@ import {ServerComponent} from "./Server/server.component";
 import {MdButtonModule, MdCardModule, MdIconModule, MdMenuModule, MdToolbarModule} from "@angular/material";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {Routes, RouterModule} from "@angular/router";
+import {ServerService} from "./Server/server.service";
+import {HttpModule} from "@angular/http";
 
 const appRoutes: Routes = [
   {path:"server", component: ServerComponent}
@@ -17,6 +19,7 @@ const appRoutes: Routes = [
     ServerComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     FormsModule,
     MdButtonModule,
@@ -27,7 +30,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
