@@ -8,4 +8,8 @@ export class ServerService{
     const header = new Headers({'Content-Type': 'application/json'});
     return this.http.post('http://localhost:8080/company',company,{headers:header});
   }
+
+  findCompany(){
+    return this.http.get('http://localhost:8080/company?name=sanelib');
+  }
 }
