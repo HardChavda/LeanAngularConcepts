@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 import {DataSource} from '@angular/cdk';
 @Component({
   selector : 'app-server',
@@ -32,4 +32,5 @@ export class ServerComponent{
     this.eventMessage = (<HTMLInputElement>event.target).value;
   }
 
+  @Input() serverElements:{type: string,name: string,content: string};
 }

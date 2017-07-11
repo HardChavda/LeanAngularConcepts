@@ -35,4 +35,10 @@ export class AppComponent {
       (error) => console.log(error)
     );
   }
+
+  elements = [{
+    type: 'server',
+    name: 'two',
+    content: 'ccc'
+  }];
 }
