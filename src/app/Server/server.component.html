@@ -37,3 +37,7 @@ Server status is {{getServerStatus()}}<br>
 <p *ngIf="serverElements.name==='two'">two</p>
 <input type="text" class="form-control" #localRef>
 <button class="btn btn-primary" (click)="localRefDemo(localRef)">Local Ref</button>
+
+
+<input type="text" class="form-control" #viewchildexample>
+<button class="btn btn-primary" (click)="notPassedAnyLocalReferance()">view child</button>

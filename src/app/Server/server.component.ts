@@ -1,4 +1,4 @@
-import {Component, Input} from "@angular/core";
+import {Component, Input, ElementRef, ViewChild} from "@angular/core";
 import {DataSource} from '@angular/cdk';
 @Component({
   selector : 'app-server',
@@ -36,5 +36,11 @@ export class ServerComponent{
 
   localRefDemo(input){
     console.log(input.value);
+  }
+
+  @ViewChild('viewchildexample') viewChildExample : ElementRef;
+
+  notPassedAnyLocalReferance(){
+    console.log(this.viewChildExample.nativeElement.value);
   }
 }
