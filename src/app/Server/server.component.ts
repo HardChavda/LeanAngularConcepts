@@ -32,5 +32,5 @@ export class ServerComponent{
     this.eventMessage = (<HTMLInputElement>event.target).value;
   }
 
-  @Input() serverElements:{type: string,name: string,content: string};
+  @Input('aliasName') serverElements:{type: string,name: string,content: string};
 }
