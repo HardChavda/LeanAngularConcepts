@@ -33,4 +33,8 @@ export class ServerComponent{
   }
 
   @Input('aliasName') serverElements:{type: string,name: string,content: string};
+
+  localRefDemo(input){
+    console.log(input.value);
+  }
 }
