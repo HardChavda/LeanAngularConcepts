@@ -35,3 +35,14 @@
 <button class="btn btn-primary" (click)="addCompany()">Add Company</button>
 <button class="btn btn-primary" (click)="getCompany()">Get Company</button>
 
+
+<button md-mini-fab type="button" onclick="document.getElementById('fileToUpload').click()">
+  <label for="fileToUpload"><md-icon>add</md-icon></label>
+</button>
+<input id="fileToUpload" type="file" style="display:none;">
+
+
+<button type="button" md-button (click)="imgFileInput.click()">Add a photo</button>
+<input hidden type="file" #imgFileInput (change)="previewImage($event)"/>
+
+<table-pagination-example></table-pagination-example>
