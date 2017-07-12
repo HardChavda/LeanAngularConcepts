@@ -15,6 +15,7 @@ import {HttpModule} from "@angular/http";
 import {MdDataTableModule} from "ng2-md-datatable";
 import {TablePaginationExample} from "./table-example/table-example.component";
 import {CdkTableModule} from "@angular/cdk";
+import { TestingComponent } from './testing/testing.component';
 
 const appRoutes: Routes = [
   {path:"server", component: ServerComponent}
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ServerComponent,
-    TablePaginationExample
+    TablePaginationExample,
+    TestingComponent
   ],
   imports: [
     HttpModule,
